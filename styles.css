@@ -1,0 +1,54 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252424;
+    padding: 10px;
+    height: 30px;
+  }
+  
+  .navbar-links a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 155px;
+    height: 25px;
+  }
+  
+  .navbar-login button {
+    padding: 8px 16px;
+    background-color: GREEN;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar-login button:hover{
+    scale: 1.1;
+    border-bottom: 2px solid rgb(137, 209, 2);
+  }
+
+  body{
+    background-image: url("https://www.minecraft.net/content/dam/games/minecraft/background-images/pdp-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.content .form-popup{
+    flex-direction: column;
+}
+  
