@@ -66,12 +66,13 @@
     flex-direction: column;
   }
   
-  #login{
+  #login { 
     padding-top: 100px;
     padding: 20px;
     max-width: 400px;
     background-color: white;
     border-radius: 10px;
+    height: 210px;
     width: 100%;
   }
 
@@ -89,10 +90,12 @@
     border-radius: 5px;
     border: 1px solid #CCCC;
   }
-  #login button{    
+  #login-btn{  
+    position: relative;
+    bottom: 40px; 
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 9px 20px;
     cursor: pointer;
     font-size: 16px;
     background-color: green;
@@ -139,7 +142,4 @@
     width: 600px;
     border: 2px solid#CCCC;
     border-radius: 10px;
-  }
-  #tbl_exporttable_to_xls {
-    
   }
