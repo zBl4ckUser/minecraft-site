@@ -5,3 +5,14 @@ function ExportToExcel(type, fn, dl) {
       XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }):
       XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
  }
+
+function soundChange(){
+  var audio = document.getElementById("background-music"); 
+  if(audio.paused){
+    audio.play();
+  }else{
+    audio.pause();
+  }
+  audio.volume = 0.105
+  
+}

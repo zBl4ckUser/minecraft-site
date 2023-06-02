@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>Informações</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-links">
-          <a href="index.html">Home</a>
-          <a href="">Informações</a>
-          <a href="https://tlauncher.org/en/">Baixe agora</a>
-        </div>
-        <div class="navbar-logo">
-          <a href="https://www.youtube.com/@viniccius13"> <img src="https://www.minecraft.net/content/dam/games/minecraft/logos/logo-minecraft.svg" alt="Logo"></a>
-        </div>
-        <div class="navbar-login">
-          <button onclick="location.href='login.html'">Login</button>
-        </div>
+  <div class="navbar">
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="infos.html">Informações</a>
+      <a href="https://tlauncher.org/en/">Baixe agora</a>
     </div>
+    <div class="navbar-logo">
+      <a href="https://www.youtube.com/@viniccius13"> <img src="https://www.minecraft.net/content/dam/games/minecraft/logos/logo-minecraft.svg" alt="Logo"></a>
+    </div>
+    <div class="audio-button">
+      <button id="audio-button" onclick="soundChange()"><img id="audio-icon" src="audio-speaker.png"></button>
+    </div>
+    <div class="navbar-login">
+      <button onclick="location.href='login.html'">Login</button>
+    </div>
+</div>
 
     <div class="content" id="info-content"> 
         <h1>Ah, Minecraft!</h1>
@@ -31,12 +35,33 @@
             sua complexidade chega a ser desafiante até para os mais velhos<br>
             Dentro de Minecraft, temos um item chamado Redstone que nos permite fazer coisas incríveis como por exemplo, criar
             portas que abrem e se fecham sozinhas; Criar calculadoras e até computadores completos!<br>
-            Veja um exemplo: <br>
+            Veja um exemplo: <br> <br><br>
             <iframe width="808" height="455" src="https://www.youtube.com/embed/LGkkyKZVzug" title="16-bit ALU in minecraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="redstone-video"></iframe>
         </p>
 
-        <table id="tbl_exporttable_to_xls">
-
+        <h1>Veja agora as principais armas do jogo</h1> <br><br><br><br>
+        <table id="tbl_exporttable_to_xls" border="1">
+          <thead>
+            
+          </thead>
+          <tbody>
+            <td>
+              <h3>Espada</h3>
+              <img src="https://pm1.narvii.com/7122/ad6680f8075e3d8921043a4e02fa21a385d9ce86r1-335-336v2_00.jpg">
+            </td>
+            <td>
+              <h3>Machado</h3>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAAHlBMVEX///83KRBrUR9JNhUoHgtoTh6GZSaJZyd1WCFZQxkY8AnEAAAA9klEQVR4nO3XSQrDUAxEwczD/S+c3VcCwhiaEEHqLQ3m167R4SBJ0tCOTb82fQSYBpgGmAaYNhRYmFvTACogICAg4EhgxzqtHitAQEBAQMD9rK7z6roCBAQEBAR8B9asFeu5qm+XFSAgICDg/wI7alWztk2tPwABAQEB/xdYdWdRzdqpCRAQEBAQ8J11X3VnUTeJX2QBAgICAg4Hbs/aFx/eG2AaYBpgGmDaUOBQVgWYBpgGmAaYNhRYrO2z6GcBpgGmAaYBpg0FDp21CjANMA0wDTBtKHDorFWAaYBpgGmAaeOBo2atCzANMA0wDTBtPFCSpN29AKFdUtFvJpJxAAAAAElFTkSuQmCC">
+            </td>
+            <td>
+              <h3>Arco</h3>
+              <img src="https://lh3.googleusercontent.com/1HRns00AaxMyUM9yhDDaei2dH9IcO_rCYE4YhnjjnG9JDa_S63-Bb18sEGnps_vn5omfPKw8PPiM7hSwGGSZjqdy5lSKUS2SJQ=s400">
+            </td>
+            <td>
+              <h3>Besta</h3>
+              <img src="https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/2/24/Besta.png/revision/latest?cb=20191227153435">
+            </td>
+          </tbody>
         </table>
 
 
@@ -45,4 +70,5 @@
     </div>
     
 </body>
+<audio id="background-music" src="droppylikesyourface.mp3" autoplay="true"  hidden="true"></audio>
 </html>
